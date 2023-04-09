@@ -132,13 +132,10 @@ class Game2 extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
-        <button style={{  color : 'deepskyblue', fontSize :17 }} onClick={() => this.handleNewGameClick()}>Nouveau jeux</button>
-        <button style={{ marginBottom:520,marginTop:30,  color : 'deepskyblue',fontSize :17 }} onClick={() => this.handleGameModeClick()}>
-          Changer vers {this.state.gameMode === "human-vs-human" ? "humain-vs-cpu" : "human-vs-human"}
-        </button>
+        <div style={{marginTop:30,  color : 'deepskyblue',fontSize :17 }}>
         {this.state.gameMode === "player-vs-computer" && this.state.xIsNext && (
-          <div>
-            <label style={{  color : 'deepskyblue', fontSize :17 }} htmlFor="difficulty-select">Difficulty:</label>
+          <div >
+            <label style={{ color : 'black',fontSize :17 }}  htmlFor="difficulty-select">Difficulty:</label>
             <select id="difficulty-select" value={this.state.difficultyLevel} onChange={this.handleDifficultyLevelChange}>
               <option value="easy">Easy</option>
               <option value="medium">Medium</option>
@@ -146,11 +143,19 @@ class Game2 extends React.Component {
             </select>
           </div>
         )}
+        <button style={{ color : 'deepskyblue', fontSize :17 }} onClick={() => this.handleNewGameClick()}>Nouveau jeux</button>
+        <button style={{  color : 'deepskyblue',fontSize :17 }} onClick={() => this.handleGameModeClick()}>
+          Changer vers {this.state.gameMode === "human-vs-human" ? "humain-vs-cpu" : "human-vs-human"}
+        </button>
+        
+        
+       
         {this.state.gameMode === "player-vs-computer" && !this.state.xIsNext && (
           <ComputerPlayer difficultyLevel="hard"  />
         )}
                   <ComputerPlayer difficultyLevel="easy"  />
-
+                    
+                  </div>  
       </div>
     );
   }
