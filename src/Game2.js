@@ -132,7 +132,7 @@ class Game2 extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
-        <div style={{marginTop:30,  color : 'deepskyblue',fontSize :17 }}>
+        <div style={{marginBottom:300, marginTop:30,  color : 'deepskyblue',fontSize :17 }}>
         {this.state.gameMode === "player-vs-computer" && this.state.xIsNext && (
           <div >
             <label style={{ color : 'black',fontSize :17 }}  htmlFor="difficulty-select">Difficulty:</label>
