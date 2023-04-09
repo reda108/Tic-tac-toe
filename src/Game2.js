@@ -113,7 +113,7 @@ class Game2 extends React.Component {
     }
   
     return (
-      <div   >
+      <div   style={{ backgroundImage:'url("https://thumbs.dreamstime.com/b/tic-tac-toe-pattern-blue-background-chaotic-sample-74834641.jpg")' , color : 'deepskyblue',textAlign:'center'}} >
       
         <div style={{  background : '#8aebe6' ,color:'black', height:70,fontSize :50 ,textAlign:'center'}} className="game-status">Morpion</div>
         <div style={{  color : 'black',fontSize :30 ,marginTop:25 ,textAlign:'center'}} className="game-status">{gameStatus}</div>
@@ -136,7 +136,7 @@ class Game2 extends React.Component {
           color : 'deepskyblue',
           fontSize :17
         }} onClick={() => this.handleNewGameClick()}>Nouveau jeux</button>
-        <button style={{ marginBottom:120,  color : 'deepskyblue',fontSize :17 }} onClick={() => this.handleGameModeClick()}>
+        <button style={{ marginBottom:120,marginTop:30,  color : 'deepskyblue',fontSize :17 }} onClick={() => this.handleGameModeClick()}>
           Changer vers {this.state.gameMode === "human-vs-human" ? "humain-vs-cpu" : "human-vs-human"}
         </button>
        
