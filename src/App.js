@@ -9,7 +9,7 @@ import Test from './Test';
 
 function App() {
   return (
-    <div style={{ backgroundImage:'url("https://thumbs.dreamstime.com/b/tic-tac-toe-pattern-blue-background-chaotic-sample-74834641.jpg")' , color : 'deepskyblue',textAlign:'center'}}>
+    <div>
         <Game/>
     </div>
   );
