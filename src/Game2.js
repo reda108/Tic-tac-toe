@@ -134,7 +134,7 @@ class Game2 extends React.Component {
         </div>
        
         <button style={{ border: 'solid black',marginBottom:330,marginTop :30,marginRight:10, color : 'deepskyblue', fontSize :17 }} onClick={() => this.handleNewGameClick()}>Nouveau jeux</button>
-        <button style={{  border: 'solid ', color : 'deepskyblue',fontSize :17 }} onClick={() => this.handleGameModeClick()}>
+        <button style={{  border: 'solid black', color : 'deepskyblue',fontSize :17 }} onClick={() => this.handleGameModeClick()}>
           Changer vers {this.state.gameMode === "human-vs-human" ? "humain-vs-cpu" : "human-vs-human"}
         </button>
         
