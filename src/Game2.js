@@ -132,18 +132,8 @@ class Game2 extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
-        <div style={{marginBottom:300, marginTop:30,  color : 'deepskyblue',fontSize :17 }}>
-        {this.state.gameMode === "player-vs-computer" && this.state.xIsNext && (
-          <div >
-            <label style={{ color : 'black',fontSize :17 }}  htmlFor="difficulty-select">Difficulty:</label>
-            <select id="difficulty-select" value={this.state.difficultyLevel} onChange={this.handleDifficultyLevelChange}>
-              <option value="easy">Easy</option>
-              <option value="medium">Medium</option>
-              <option value="hard">Hard</option>
-            </select>
-          </div>
-        )}
-        <button style={{ color : 'deepskyblue', fontSize :17 }} onClick={() => this.handleNewGameClick()}>Nouveau jeux</button>
+       
+        <button style={{ marginBottom:500,marginTop :30, color : 'deepskyblue', fontSize :17 }} onClick={() => this.handleNewGameClick()}>Nouveau jeux</button>
         <button style={{  color : 'deepskyblue',fontSize :17 }} onClick={() => this.handleGameModeClick()}>
           Changer vers {this.state.gameMode === "human-vs-human" ? "humain-vs-cpu" : "human-vs-human"}
         </button>
@@ -155,7 +145,7 @@ class Game2 extends React.Component {
         )}
                   <ComputerPlayer difficultyLevel="easy"  />
                     
-                  </div>  
+                   
       </div>
     );
   }
